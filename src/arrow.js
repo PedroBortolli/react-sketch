@@ -67,16 +67,6 @@ class Arrow extends FabricCanvasTool {
 
   doMouseUp(o) {
     this.isDown = false;
-    let canvas = this._canvas;
-
-    canvas.remove(this.line);
-    canvas.remove(this.head);
-    let arrow = new fabric.Group([this.line, this.head]);
-    canvas.add(arrow);
-  }
-
-  doMouseOut(o) {
-    this.isDown = false;
   }
 }
 
